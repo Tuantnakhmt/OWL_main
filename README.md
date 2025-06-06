@@ -31,7 +31,7 @@ Vì một vài lí do nào đó (chủ quan & khách quan), mà khách hàng b�
 
 # 📈 Bài toán 2: Dự đoán ARPU của khách hàng có doanh thu cao
 
-## 🧠 Mục tiêu dự án
+## 🧠 Mô tả dự án
 Xây dựng mô hình hồi quy nhằm **dự đoán doanh thu (ARPU)** của các thuê bao có mức chi tiêu cao. Từ đó hỗ trợ:
 - Cảnh báo sớm khách hàng có xu hướng **giảm chi tiêu**.
 - Đề xuất gói **ưu đãi phù hợp** dựa trên phân khúc sử dụng.
@@ -44,10 +44,10 @@ Xây dựng mô hình hồi quy nhằm **dự đoán doanh thu (ARPU)** của c�
 ## ⚙️ Tiền xử lý & Feature Engineering
 - Lọc khách hàng có ARPU tháng 7 > 125,000 đồng.
 - Xử lý outlier bằng **capping (Q3)**.
-- Điền missing bằng **0**.
+- Điền missing bằng **0**,...
 - Tạo đặc trưng giảm chi tiêu theo 3 tháng gần nhất (decrease_arpu_123,...).
 
-## 🤖 Mô hình và đánh giá
+## 🤖 Mô hình và đánh giá kết quả
 Áp dụng 2 mô hình:
 - **Random Forest**
 - **XGBoost**
@@ -59,10 +59,5 @@ Xây dựng mô hình hồi quy nhằm **dự đoán doanh thu (ARPU)** của c�
 
 ✅ **XGBoost** cho kết quả tốt hơn với sai lệch thấp hơn và dự đoán sát thực tế.
 
-## 🧪 Ứng dụng kết quả
-- **Cảnh báo giảm chi tiêu**: Precision 66.4%, Recall 32.5%.
-- **Phân khúc khách hàng** bằng KMeans: độ chính xác phân nhóm đạt 99.52%.
 
-## 📌 Kết luận
-- Mô hình có thể hỗ trợ **marketing định hướng**, gợi ý gói phù hợp với từng nhóm khách hàng.
-- Đặc biệt hữu ích trong việc **giữ chân khách hàng có giá trị cao** và tối ưu hóa chiến lược ưu đãi.
+
